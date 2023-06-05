@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUDGET APP</title>
+  <link rel="stylesheet" href="style.css" />
+  <style></style>
+</head>
+
+<body>
+  <div id="div1">
+    <center>
+      <div>
+        <h1>LOGIN</h1>
+        <form id="div1A">
+          <label>Name</label>
+          <input type="text" placeholder="" id="namesignin" />
+          <label>Password</label>
+          <input type="password" placeholder="" id="passwordsignin" />
+        </form>
+        <div class="login-button">
+          <button id="add" onclick="back()" class="buttons">signup</button>
+          <button id="add" onclick="forward()" class="buttons">login</button>
+        </div>
+      </div>
+    </center>
+  </div>
+
+
+  <div id="div2">
+    <center>
+      <div>
+        <h1>Signup</h1>
+        <form id="div1A">
+          <label>Email</label>
+          <input type="email" placeholder="" id="email" />
+          <label>Name</label>
+          <input type="text" placeholder="" id="name" />
+          <label>Password</label>
+          <input type="password" placeholder="" id="password" />
+        </form>
+        <div class="login-button">
+          <button id="add" onclick="back1()" class="buttons">login</button>
+          <button id="add" onclick="myFunction()" class="buttons">registered</button>
+        </div>
+      </div>
+    </center>
+  </div>
+
+  <div id="mainbudget" class="mainbudget">
+    <div id="mainbudgetcontent" class="mainbudgetcontent">
+      <div id="namediv">
+        <h1>Welcome to my Budget App <span id="username" ></span></h1>
+      </div>
+      <div class="budgetexpense">
+        <div id="div3" class="budgetForm">
+          <div class="budget-form">
+            <h1>Budget Form</h1>
+            <!-- <label>Email</label> -->
+            <input type="text" placeholder="" id="addbudget" />
+          </div>
+          <div>
+            <button id="add" onclick="addbudget()" class="buttons">Add Budget</button>
+          </div>
+        </div>
+        <div id="div5" class="expense-form">
+          <center>
+            <div>
+              <h1>Expense form</h1>
+              <form id="div1A">
+                <label>Date</label>
+                <input type="date" id="inputDate" />
+                <label>Category</label>
+                <input type="text" id="inputCategory" />
+                <label>Amount</label>
+                <input type="number" id="expenseAmount" />
+              </form>
+              <div class="login-button">
+                <button id="addExpense" onclick="expenseadd()" class="buttons">
+                  Add expense
+                </button>
+              </div>
+            </div>
+          </center>
+        </div>
+      </div>
+      <div  class="listbar">
+        <div id="div4" >
+          <div class="budget-bar">
+            <h2>Total Budget</h2>
+            <p><span id="total-budget" class="budget-values">00</span></p>
+          </div>
+          <div class="div41">
+            <h2>Expences</h2>
+            <p><span id="expence" class="budget-values">00</span></p>
+          </div>
+          <div class="div41">
+            <h2>Balance</h2>
+            <p><span id="Balance" class="budget-values">00</span></p>
+          </div>
+        </div>
+
+        <div id="div6" class="mainExpenseList">
+          <h1>Expense List</h1>
+          <div class="expense-list">
+            <div class="expense-bar">
+              <h4>Category</h4>
+            </div>
+            <div class="expense-bar">
+              <h4>Amount</h4>
+            </div>
+            <div class="expense-bar">
+              <h4>Date</h4>
+
+            </div>
+
+          </div>
+
+          <div class="MainExpenselist" id="expenseList">
+
+
+          </div>
+          <div id="appendExpenselist" class="expenseList2">
+
+            <div class="expense-bar" id="categoryList">
+              <span id="category">0</span>
+            </div>
+            <div class="expense-bar" id="amountList">
+              <span id="expenseitem">0</span>
+            </div>
+            <div class="expense-bar" id="dateList">
+              <span id="expensedate">0</span>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
